@@ -12,7 +12,6 @@ var fuel_consumption = 0; // in Liters per Second
 console.log("begin");
 // boost
 var __keypressed = false;
-var __ke;
 readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
 process.stdin.on('keypress', function (str, key) {

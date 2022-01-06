@@ -6,8 +6,8 @@ const readline = require('readline');
 //#endregion
 
 let initial_height: number = 50000 // 
-let gravitational_acceleration = 1.63 // meters per second
-let rocket_acceleration = -24 // meters per second
+let gravitational_acceleration: number = 1.63 // meters per second
+let rocket_acceleration: number = -24 // meters per second
 let velocity = 1000 // in meters per second
 let time_unit = 1 // one millisecond 
 
@@ -17,8 +17,7 @@ let fuel_consumption: number = 0; // in Liters per Second
 console.log("begin")
 
 // boost
-let __keypressed = false
-let __ke
+let __keypressed: boolean = false
 readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
 
